@@ -1,7 +1,7 @@
 import { ConflictException, Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/database';
 import { CreateWorkTypeDto, ReadManyWorkTypesDto } from './dto';
-import { ReadWorkTypesMapper } from './mappers';
+import { ReadWorkTypesMapper } from '../mappers';
 import { randomUUID } from 'crypto';
 
 @Injectable()

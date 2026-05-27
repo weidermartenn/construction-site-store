@@ -1,5 +1,5 @@
 import { WorkType } from 'src/generated/prisma/client';
-import { ReadManyWorkTypesDto, ReadWorkTypeDto } from '../dto';
+import { ReadManyWorkTypesDto, ReadWorkTypeDto } from '../work-types/dto';
 export class ReadWorkTypesMapper {
   public mapOne(workType: WorkType): ReadWorkTypeDto {
     return {
