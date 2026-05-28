@@ -34,7 +34,7 @@ export class WorkLogsService {
       take: query.take,
       skip: query.skip,
       where,
-      orderBy: { date: 'desc' },
+      orderBy: { createdAt: 'desc' },
     });
 
     return this.mapper.mapAll(data, count);
