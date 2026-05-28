@@ -1,0 +1,44 @@
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 cursor-pointer text-sm;
+
+  &-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 active:scale-95 shadow-sm hover:shadow-md cursor-pointer;
+  }
+
+  &-danger {
+    @apply bg-white text-red-500 border border-red-200 hover:bg-red-50 hover:border-red-400 active:scale-95;
+  }
+
+  &-secondary {
+    @apply bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:border-gray-400 active:scale-95;
+  }
+}
+
+
+.input {
+  @apply w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200;
+
+  &-error {
+    @apply border-red-400 focus:ring-red-400;
+  }
+}
+
+
+.table {
+  @apply w-full border-collapse text-sm;
+
+  &-header {
+    th {
+      @apply px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50 border-b border-gray-200;
+    }
+  }
+
+  &-row {
+    @apply border-b border-gray-100 hover:bg-blue-50 transition-colors duration-150;
+  }
+
+  &-cell {
+    @apply px-4 py-3 text-gray-700;
+  }
+}
