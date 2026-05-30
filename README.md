@@ -46,7 +46,7 @@ cd construction-site-store
 cp .env.example .env
 ```
 
-Заполните переменные в `.env` и запусти контейнер:
+Заполните переменные в `.env` и запустите контейнер:
 
 ```bash
 docker-compose up -d
